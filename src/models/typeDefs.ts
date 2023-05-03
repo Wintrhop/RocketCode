@@ -6,6 +6,15 @@ export const typeDefs = gql`
     welcome(name: String!): String
   }
   #User Model Object
-  type User
+  type User {
+  id:ID
+  name:String
+  projectValue:Int
+  projectDepartment:String
+  city:String
+  }
+  #User Mutation
+  type Mutation {
+    create(name: String, projectValue: Int, projectDepartment: String, city): User
+  }
 `;
-

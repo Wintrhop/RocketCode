@@ -13,7 +13,7 @@ const userSchema = new Schema(
       required: [true, "Please Enter a Name"],
     },
     projectValue: {
-      type: String,
+      type: Number,
       required: [true, "Please Enter an Email"],
     },
     projectDepartment: {
