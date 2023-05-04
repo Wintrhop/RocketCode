@@ -2,14 +2,15 @@
   "name": "rocketcode",
   "version": "1.0.0",
   "description": "",
-  "main": "src /server.ts",
+  "main": "src /index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/index.js",
-    "renderDeploy":"npm i && tsc --build",
+    "renderDeploy": "npm i && tsc --build",
     "build": "tsc --build",
     "nodemon": "nodemon dist/index.js"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Wintrhop/RocketCode.git"
@@ -23,7 +24,11 @@
   "homepage": "https://github.com/Wintrhop/RocketCode#readme",
   "dependencies": {
     "@apollo/server": "^4.7.1",
+    "@types/cors": "^2.8.13",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "graphql": "^16.6.0",
     "graphql-tag": "^2.12.6",
     "mongoose": "^7.1.0"
