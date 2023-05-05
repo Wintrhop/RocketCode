@@ -2,8 +2,8 @@ import gql from "graphql-tag";
 
 export const typeDefs = gql`
   type Query {
-    Clients: [Client]
-    Client(id: ID!): Client!
+    clients: [Client]
+    client(id: ID): Client
   }
   #User Model Object
   type Client {
