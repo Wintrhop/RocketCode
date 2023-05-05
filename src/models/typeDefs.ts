@@ -2,11 +2,11 @@ import gql from "graphql-tag";
 
 export const typeDefs = gql`
   type Query {
-    Users: [User]
-    User(id: ID!): User!
+    Clients: [Client]
+    Client(id: ID!): Client!
   }
   #User Model Object
-  type User {
+  type Client {
     id: ID
     name: String
     projectValue: Int
@@ -20,6 +20,6 @@ export const typeDefs = gql`
       projectValue: Int
       projectDepartment: String
       city: String
-    ): User
+    ): Client
   }
 `;
