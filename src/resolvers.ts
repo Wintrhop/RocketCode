@@ -1,8 +1,8 @@
 import User, { IUser } from "./models/User";
 export const resolvers = {
   Query: {
-    Users: async (): Promise<IUser[]> => await User.find({}),
-    User: async (_: any, args: any): Promise<IUser> => {
+    Clients: async (): Promise<IUser[]> => await User.find({}),
+    Client: async (_: any, args: any): Promise<IUser> => {
         const user = await User.findById(args.id)
         return user!
     
